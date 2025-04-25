@@ -124,8 +124,8 @@ sed -i 's/网页管理账号和密码:admin ,端口:/端口/' luci-app-adguardho
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-softethervpn
 
 # DNS
-# svn export https://github.com/kenzok8/small-package/trunk/mosdns
-# svn export https://github.com/kenzok8/small-package/trunk/luci-app-mosdns
+svn export https://github.com/kenzok8/small-package/trunk/mosdns
+svn export https://github.com/kenzok8/small-package/trunk/luci-app-mosdns
 # svn export https://github.com/kenzok8/small-package/trunk/smartdns
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-smartdns
 
@@ -221,13 +221,13 @@ chmod -R a+x package/base-files/files/root/5GModem
 cp -rf MyConfig/configs/lede/general/etc/crontabs/* package/base-files/files/etc/crontabs
 
 # 修改默认IP地址
-sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.10.1.1/g' package/base-files/files/bin/config_generate
 
 # 修改子网掩码
 #sed -i 's/255.255.255.0/255.255.0.0/g' package/base-files/files/bin/config_generate
 
 # 修改主机名字
-sed -i 's/OpenWrt/5G CPE/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/Ainslee Router/g' package/base-files/files/bin/config_generate
 
 # 修改版本号
 # sed -i 's/R22.3.3/R22.3.3定制版/g' package/lean/default-settings/files/zzz-default-settings
