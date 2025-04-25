@@ -52,9 +52,9 @@ rm -rf ../../customfeeds/luci/applications/luci-app-fileassistant
 mkdir luci-app-fileassistant
 cp -rf ../../kenzok8/luci-app-fileassistant/* luci-app-fileassistant
 #guest-wifi
-rm -rf ../../customfeeds/luci/applications/luci-app-guest-wifi
-mkdir luci-app-guest-wifi
-cp -rf ../../kenzok8-small/luci-app-guest-wifi/* luci-app-guest-wifi
+# rm -rf ../../customfeeds/luci/applications/luci-app-guest-wifi
+# mkdir luci-app-guest-wifi
+# cp -rf ../../kenzok8-small/luci-app-guest-wifi/* luci-app-guest-wifi
 #Onliner (need luci-app-nlbwmon)
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 #Eqos
@@ -65,10 +65,10 @@ mkdir luci-app-wolplus
 cp -rf ../../kenzok8-small/luci-app-wolplus/* luci-app-wolplus
 
 # 存储相关应用
-mkdir gowebdav
-mkdir luci-app-gowebdav
-cp -rf ../../kenzok8-small/gowebdav/* gowebdav
-cp -rf ../../kenzok8-small/luci-app-wolplus/* luci-app-gowebdav
+# mkdir gowebdav
+# mkdir luci-app-gowebdav
+# cp -rf ../../kenzok8-small/gowebdav/* gowebdav
+# cp -rf ../../kenzok8-small/luci-app-wolplus/* luci-app-gowebdav
 
 # 科学上网和代理应用
 #SSR,Passwall,Passwall2,Bypass,VSSR
@@ -88,21 +88,21 @@ mkdir luci-app-openclash
 cp -rf ../../kenzok8/luci-app-openclash/* luci-app-openclash
 cp -rf ../../MyConfig/configs/lede/general/applications/luci-app-openclash/* luci-app-openclash
 # Daed-next
-git clone https://github.com/sbwml/luci-app-daed-next
+# git clone https://github.com/sbwml/luci-app-daed-next
 # Subconverter
 # git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
 # 去广告
 #ADGuardHome
-rm -rf ../../customfeeds/packages/utils/adguardhome
-rm -rf ../../customfeeds/luci/applications/luci-app-adguardhome
-mkdir adguardhome
-mkdir luci-app-adguardhome
-cp -rf ../../kenzok8/adguardhome/* adguardhome
-cp -rf ../../kenzok8/luci-app-adguardhome/* luci-app-adguardhome
-cp -rf ../../MyConfig/configs/lede/general/applications/luci-app-adguardhome/* luci-app-adguardhome
-sed -i 's/默认账号和密码均为：admin/默认用户名和密码均为root/' luci-app-adguardhome/po/zh-cn/AdGuardHome.po
-sed -i 's/网页管理账号和密码:admin ,端口:/端口/' luci-app-adguardhome/po/zh-cn/AdGuardHome.po
+# rm -rf ../../customfeeds/packages/utils/adguardhome
+# rm -rf ../../customfeeds/luci/applications/luci-app-adguardhome
+# mkdir adguardhome
+# mkdir luci-app-adguardhome
+# cp -rf ../../kenzok8/adguardhome/* adguardhome
+# cp -rf ../../kenzok8/luci-app-adguardhome/* luci-app-adguardhome
+# cp -rf ../../MyConfig/configs/lede/general/applications/luci-app-adguardhome/* luci-app-adguardhome
+# sed -i 's/默认账号和密码均为：admin/默认用户名和密码均为root/' luci-app-adguardhome/po/zh-cn/AdGuardHome.po
+# sed -i 's/网页管理账号和密码:admin ,端口:/端口/' luci-app-adguardhome/po/zh-cn/AdGuardHome.po
 #dnsfilter
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-dnsfilter
 #ikoolproxy
@@ -124,8 +124,8 @@ sed -i 's/网页管理账号和密码:admin ,端口:/端口/' luci-app-adguardho
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-softethervpn
 
 # DNS
-svn export https://github.com/kenzok8/small-package/trunk/mosdns
-svn export https://github.com/kenzok8/small-package/trunk/luci-app-mosdns
+# svn export https://github.com/kenzok8/small-package/trunk/mosdns
+# svn export https://github.com/kenzok8/small-package/trunk/luci-app-mosdns
 # svn export https://github.com/kenzok8/small-package/trunk/smartdns
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-smartdns
 
@@ -153,12 +153,12 @@ rm -rf ../../customfeeds/luci/applications/luci-app-socat
 mkdir luci-app-socat
 cp -rf ../../kenzok8-small/luci-app-socat/* luci-app-socat
 #Unblockneteasemusic
-rm -rf ../../customfeeds/luci/applications/Unblockneteasemusic
-rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
-mkdir UnblockNeteaseMusic
-mkdir luci-app-unblockneteasemusic
-cp -rf ../../kenzok8/UnblockNeteaseMusic/* UnblockNeteaseMusic
-cp -rf ../../kenzok8/luci-app-unblockneteasemusic/* luci-app-unblockneteasemusic
+# rm -rf ../../customfeeds/luci/applications/Unblockneteasemusic
+# rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
+# mkdir UnblockNeteaseMusic
+# mkdir luci-app-unblockneteasemusic
+# cp -rf ../../kenzok8/UnblockNeteaseMusic/* UnblockNeteaseMusic
+# cp -rf ../../kenzok8/luci-app-unblockneteasemusic/* luci-app-unblockneteasemusic
 # OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
 
