@@ -43,6 +43,10 @@ jobs:
         
     - name: Clone Source Code
       run: |
+        sudo apt-get update
+        sudo apt-get install -y golang-1.19 subversion rsync
+        echo "GOPATH=$HOME/go" >> $GITHUB_ENV
+        echo "PATH=$PATH:/usr/lib/go-1.19/bin:$HOME/go/bin" >> $GITHUB_ENV
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
 
